@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End Of Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url('calcBackground.gif');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#calc {
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-radius: 15px;
+	height: 400px;
+	width: 320px;
+	display: flex;
+}
+
+#calc div {
+	flex-direction: column;
+	display: flex;
+}
+
+#calc div div{
+	flex-direction: row;
+	display: flex;
+}
+
+#screen {
+	padding-right: 10px;
+	text-align: right;
+	justify-content: center;
+	display: flex;
+	font-size: 30px;
+	font-weight: 600;
+	color: black;
+	border: 1px solid black;
+	background-image: url('keyBacks.gif');
+	height: 80px;
+	width: 320px;
+	background-color: white;
+}
+
+#numpad {
+	flex-direction: column;
+	display: flex;
+}
+
+#numpad div {
+	flex-direction: row;
+	display: flex;
+}
+
+#numpad button {
+	font-size: 30px;
+	font-weight: 600;
+	background-image: url('keyBacks.gif');
+	border: 1px solid black;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#numpad #clear {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 120px;
+}
+
+#numpad #zero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 120px;
+}
+
+#operators {
+	flex-direction: column;
+	display: flex;
+}
+
+#operators button {
+	background-image: url('keyBacks.gif');
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 64px;
+	width: 80px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
